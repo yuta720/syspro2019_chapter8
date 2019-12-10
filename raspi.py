@@ -10,9 +10,9 @@ import datetime
 import json
 import os
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/pi/syspro-chapter8.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/pi/School/syspro2019_chapter8/syspro_firebase_secret.json"
 
-cred = credentials.Certificate('/home/pi/syspro-chapter8.json')
+cred = credentials.Certificate('/home/pi/School/syspro2019_chapter8/syspro_firebase_secret.json')
 firebase_admin.initialize_app(cred)
 i2c = smbus.SMBus(1)
 address = 0x48
